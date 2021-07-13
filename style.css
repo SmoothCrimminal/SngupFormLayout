@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    background: url(./images/bg-intro-desktop.png);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.credentials {
+    position: absolute;
+    top: 22vh;
+    right: 10vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 500px;
+    padding: 35px;
+    background-color: white;
+    height: 450px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.credentials p {
+    font-size: 10px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.credentials a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+
+input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    font-weight: 600;
+}
+
+.trial {
+    top: 11vh;
+    color: white;
+    right: 10vw;
+    position: absolute;
+    background-color: hsl(248, 32%, 49%);
+    padding: 18px;
+    width: 500px;
+    border-radius: 6px;
+    font-size: 16px;
+    border: transparent;
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.trial span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.credentials .first-name-empty {
+    opacity: 0;
+    text-align: right;
+    color: red;
+}
+
+.credentials .last-name-empty {
+    opacity: 0;
+    text-align: right;
+    color: red;
+}
+
+.credentials .email-empty {
+    opacity: 0;
+    text-align: right;
+    color: red;
+}
+
+.credentials .email-invalid {
+    opacity: 0;
+    text-align: right;
+    color: red;
+}
+
+.credentials .password-empty {
+    opacity: 0;
+    text-align: right;
+    color: red;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+.error1 {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 420px;
+}
+
+.error2 {
+    display: none;
+    position: absolute;
+    top: 127px;
+    left: 420px;
+}
+
+.error3 {
+    display: none;
+    position: absolute;
+    top: 204px;
+    left: 420px;
+}
+
+.error4 {
+    display: none;
+    position: absolute;
+    top: 281px;
+    left: 420px;
+}
+
+.credentials button {
+    display: block;
+    padding: 12px;
+    border: transparent;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0px 4px rgba(4, 131, 76, 0.815);
+    background-color: hsl(154, 59%, 51%);
+    cursor: pointer;
+}
+
+.credentials .clicked {
+    box-shadow: 0px 0.5px rgba(4, 131, 76, 0.815);
+    background-color: hsl(154, 89%, 55%);
+    ;
+}
+
+.attribution {
+    display: inline-block;
+    position: absolute;
+    width: 550px;
+    top: calc(100vh - 40px);
+    border-bottom: 1px solid black;
+    left: calc(50% - 241.5px);
+    white-space: nowrap;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.git {
+    color: black;
+}
+
+footer i {
+    position: absolute;
+    font-size: 30px;
+    left: calc(50% - 241.5px);
+    top: calc(100vh - 60px);
+    padding: 3px;
+    border: 4px solid black;
+    border-radius: 50%;
+    transform: rotate(0);
+    animation: github 4.5s ease both;
+}
+
+header h1 {
+    position: absolute;
+    line-height: 60px;
+    top: 33vh;
+    left: 10vw;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+}
+
+header p {
+    position: absolute;
+    color: white;
+    text-align: left;
+    top: 50vh;
+    left: 10vw;
+}
+
+.container-mobile {
+    display: none;
+}
+
+@keyframes github {
+    70% {
+        left: calc(50% + 245px);
+        transform: rotate(360deg);
+    }
+
+    80% {
+        left: calc(50% + 245px);
+        transform: rotate(-40deg);
+    }
+
+    90% {
+        left: calc(50% + 245px);
+        transform: rotate(40deg);
+    }
+
+    100% {
+        left: calc(50% + 245px);
+        transform: rotate(0);
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+    .container-desktop {
+        display: none;
+    }
+
+    .container-mobile {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(0, 100%, 74%);
+        z-index: -2;
+    }
+
+    .overlay {
+        position: absolute;
+        background: url(./images/bg-intro-mobile.png);
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    header h1 {
+        position: absolute;
+        line-height: 45px;
+        top: 2vh;
+        left: 50vw;
+        transform: translateX(-50%);
+        font-weight: 700;
+        font-size: 2.3rem;
+        color: white;
+        white-space: nowrap;
+    }
+
+    header p {
+        position: absolute;
+        color: white;
+        text-align: center;
+        top: 14vh;
+        left: 50vw;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+
+
+    .trial {
+        top: 32vh;
+        transform: translateX(-50%);
+        color: white;
+        left: 50vw;
+        position: absolute;
+        background-color: hsl(248, 32%, 49%);
+        padding: 18px;
+        width: 300px;
+        border-radius: 10px;
+        font-size: 16px;
+        border: transparent;
+        box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+        font-weight: 600;
+    }
+
+    .credentials {
+        position: absolute;
+        top: 44vh;
+        transform: translateX(-50%);
+        left: 50vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        background-color: white;
+        height: 410px;
+        z-index: 1;
+        border-radius: 20px;
+        padding-bottom: 10px;
+    }
+
+    .error1 {
+        display: none;
+        position: absolute;
+        top: 34px;
+        left: 240px;
+    }
+
+    .error2 {
+        display: none;
+        position: absolute;
+        top: 107px;
+        left: 240px;
+    }
+
+    .error3 {
+        display: none;
+        position: absolute;
+        top: 180px;
+        left: 240px;
+    }
+
+    .error4 {
+        display: none;
+        position: absolute;
+        top: 253px;
+        left: 240px;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <div class="container-desktop">
+    <div class="overlay"></div>
+    <header>
+      <h1>Learn to code by <br> watching others</h1>
+      <p>See how experienced developers solve problems in real-time. <br> Watching scripted tutorials is great, 
+        but understanding how <br> developers think is invaluable. </p>
+    </header>
+    <button class="trial">Try it free 7 days <span>then $20/mo. thereafter</span></button>
+    <div class="credentials">
+      <svg class="error1" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+      <svg class="error2" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+      <svg class="error3" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+      <svg class="error4" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+      <input type="text" placeholder="First Name" class="first-name">
+      <p class="first-name-empty">First Name cannot be empty</p>
+      <input type="text" placeholder="Last Name" class="last-name">
+      <p class="last-name-empty">Last Name cannot be empty</p>
+      <input type="text" placeholder="Email Address" class="email">
+      <p class="email-empty email-invalid">Email cannot be empty</p>
+      <input type="password" placeholder="Password" class="password">
+      <p class="password-empty">Password cannot be empty</p>
+      <button>Claim your free trial </button>
+      <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/SmoothCrimminal">SmoothCrimminal</a>.
+      </p>
+      <a href="https://github.com/SmoothCrimminal" class="git"><i class="fab fa-github"></a></i>
+    </footer>
+  </div>
+
+  <div class="container-mobile">
+    <div class="overlay"></div>
+    <header>
+      <h1>Learn to code by <br> watching others</h1>
+      <p>See how experienced developers solve problems in real-time. <br> Watching scripted tutorials is great, 
+        but understanding how <br> developers think is invaluable. </p>
+    </header>
+    <button class="trial">Try it free 7 days <span>then $20/mo. thereafter</span></button>
+    <div class="credentials">
+      <svg class="error1" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+      <svg class="error2" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+      <svg class="error3" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+      <svg class="error4" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+      <input type="text" placeholder="First Name" class="first-name">
+      <p class="first-name-empty">First Name cannot be empty</p>
+      <input type="text" placeholder="Last Name" class="last-name">
+      <p class="last-name-empty">Last Name cannot be empty</p>
+      <input type="text" placeholder="Email Address" class="email">
+      <p class="email-empty email-invalid">Email cannot be empty</p>
+      <input type="password" placeholder="Password" class="password">
+      <p class="password-empty">Password cannot be empty</p>
+      <button>Claim your free trial </button>
+      <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/SmoothCrimminal">SmoothCrimminal</a>.
+      </p>
+      <a href="https://github.com/SmoothCrimminal" class="git"><i class="fab fa-github"></a></i>
+    </footer>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script>
+    $(".credentials button").click(function() {
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      $(".credentials button").toggleClass("clicked");
+
+      if ($(".first-name").val() === "") {
+        $(".first-name-empty").fadeTo("opacity", 1)
+        $(".first-name").toggleClass("invalid")
+        $(".error1").show()
+      }
+
+      else {
+        $(".error1").hide()
+        $(".first-name-empty").fadeTo("opacity", 0)
+        $(".first-name").removeClass("invalid")
+      }
+      if ($(".last-name").val() === "") {
+        $(".last-name-empty").fadeTo("opacity", 1)
+        $(".last-name").toggleClass("invalid")
+        $(".error2").show()
+      }
+
+      else {
+        $(".error2").hide()
+        $(".last-name-empty").fadeTo("opacity", 0)
+        $(".last-name").removeClass("invalid")
+      }
+      if ($(".email").val() === "") {
+        $(".email-empty").text("Email cannot be empty")
+        $(".email-empty").fadeTo("opacity", 1)
+        $(".email").toggleClass("invalid")
+        $(".error3").show()
+      }
+      else if (!re.test($(".email").val())) {
+        $(".email").toggleClass("invalid")
+        $(".email-empty").text("Looks like this is not an email")
+        $(".email-empty").fadeTo("opacity", 1)
+        $(".error3").show()
+      }
+
+      else {
+        $(".error3").hide()
+        $(".email-empty").fadeTo("opacity", 0)
+        $(".email-invalid").fadeTo("opacity", 0)
+        $(".email").removeClass("invalid")
+      }
+      if ($(".password").val() === "") {
+        $(".password-empty").fadeTo("opacity", 1)
+        $(".password").toggleClass("invalid")
+        $(".error4").show()
+      }
+
+      else {
+        $(".error4").hide()
+        $(".password-empty").fadeTo("opacity", 0)
+        $(".password").removeClass("invalid")
+      }
+    })
+  </script>
+  
+</body>
+</html>
